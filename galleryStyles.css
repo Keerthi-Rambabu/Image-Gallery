@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background-color: #191919;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.gallery-outer{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: 10% auto;
+
+}
+.gallery
+{
+    width:900px;
+    display:flex;
+    /* overflow property helps scrolling in particular direction*/
+    overflow-x:scroll;
+}
+.gallery div{
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+    padding:10px;
+    flex:none;
+}
+.gallery div img{
+    width:100%;
+}
+/* with below property we can hide scrollbar*/
+.gallery::-webkit-scrollbar{
+    display:none;
+}
+#back ,#next{
+    width:50px;
+    cursor:pointer;
+    margin:40px;
+}
